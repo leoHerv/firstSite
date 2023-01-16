@@ -1,0 +1,11 @@
+/*Fichier avec le css noir et blanc pour l'index*/
+
+/*importation de index_general.css dans ce fichier*/
+@import url("index_general.css") screen;
+
+
+/*selectionne tout les "img"*/
+img
+{
+	filter: grayscale(1); /*change l'image en couleur en image en noir et blanc*/
+}

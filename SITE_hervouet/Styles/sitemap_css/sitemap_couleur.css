@@ -1,0 +1,36 @@
+/*Fichier avec le css couleur pour le sitemap*/
+
+/*importation de sitemap_general.css dans ce fichier*/
+@import url("sitemap_general.css") screen;
+
+
+/*le body*/
+body
+{
+	background-color: #83c74e; /*Arriere plan en vert*/
+}
+/*tout les h1 de la page*/
+h1
+{
+	color: #e1ffde; /*texte en vert très clair*/
+}
+/*l'id=big_ul*/
+#big_ul
+{
+	border-color: black; /*texte en noir*/
+}
+/*avant les li avec href=marque-3 et qui ont comme parent ul*/
+ul > li[href="marque-3"]:before
+{
+	color:#e1ffdc;  /*texte en vert très clair*/
+}
+/*les li avec href=marque-1 et qui ont comme parent ul*/
+ul > li[href="marque-1"]
+{
+	color: #e1ffda; /*texte en vert très clair*/
+}
+/*les li avec href=marque-2 et qui ont comme parent ul*/
+ul > li[href="marque-2"]
+{
+	color: #e1ffdb; /*texte en vert très clair*/
+}

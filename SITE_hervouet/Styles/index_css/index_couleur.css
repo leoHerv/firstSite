@@ -1,0 +1,21 @@
+/*Fichier avec le css couleur pour l'index*/
+
+/*importation de index_general.css dans ce fichier*/
+@import url("index_general.css") screen;
+
+
+/*les h1 qui ont comme parent body*/
+body > h1
+{
+	color: #e1ffdf; /*texte en vert très clair*/
+}
+/*Le corps body*/
+body
+{
+	background-color: #83c74f; /*Arriere plan en vert*/
+}
+/*les h2 qui decende de body*/
+body h2
+{
+	color: #e1ffdf; /*texte en vert très clair*/
+}

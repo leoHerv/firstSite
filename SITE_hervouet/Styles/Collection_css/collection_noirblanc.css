@@ -1,0 +1,11 @@
+/*Fichier avec le css noir et blanc pour les collection*/
+
+/*importation de collection_general.css dans ce fichier*/
+@import url("collection_general.css") screen;
+
+
+/*selectionne tout les "img"*/
+img
+{
+	filter: grayscale(1); /*change l'image en couleur en image en noir et blanc*/
+}

@@ -1,0 +1,11 @@
+/*Fichier avec le css noir et blanc pour le synoptic*/
+
+/*importation de synoptic_general.css dans ce fichier*/
+@import url("synoptic_general.css") screen;
+
+
+/*tout les td et th de la page*/
+td,th
+{
+	border-color: black; /*couleur des bordure en noir*/
+}

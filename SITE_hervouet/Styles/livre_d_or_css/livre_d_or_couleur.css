@@ -1,0 +1,34 @@
+/*Fichier avec le css couleur pour le livre d'Or*/
+
+/*importation de livre_d_or_general.css dans ce fichier*/
+@import url("livre_d_or_general.css") screen;
+
+/*Titre h1 de niveau 1*/
+h1
+{
+	color: #e1ffef; /*texte en bleu très clair*/
+}
+
+/*Corps du site body*/
+body
+{
+	background-color: #83c75f; /*Arriere plan en vert*/
+}
+
+/*toute les legend de la page*/
+legend
+{
+	color: white;
+}
+
+/*tout les textarea et input de la page*/
+textarea, input
+{
+	background-color: #95e666; /*Arriere plan en vert*/
+}
+
+/*la divition avec comme id "recap"*/
+#recap
+{
+	border-color : #e1ffee; /*bordure en bleu très clair*/
+}

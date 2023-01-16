@@ -1,0 +1,29 @@
+/*Fichier avec le css general pour le synoptic*/
+
+
+/*tout les tableau de la page*/
+table
+{
+	border-collapse: collapse; /*les bordures se collent*/
+	text-align:center; /*le texte est au milieu*/
+	margin-left: 22%; /*marge exterieur en 22% de la page*/
+}
+/*tout les td et th de la page*/
+td,th
+{
+	border: 2px solid;  /*bordure de 2 pixel et continue*/
+	padding: 10px;    /*marge interieur de 10 pixel*/
+	font-size: 20px; /*la taille de la police est de 20 pixel*/
+}
+/*les h1 de la page qui on comme parent body*/
+body > h1
+{
+	margin-left: 22%; /*marge exterieur a gauche de 22% de la page*/
+	font-size: 60px; /*taille de la police est de 60 pixel*/
+}
+/*les "a" visited et link qui sont des decendant de body*/
+body a:visited, body a:link
+{
+  color:#0a0a0a; /*texte en "noir"*/
+}
+

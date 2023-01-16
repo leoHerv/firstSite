@@ -1,0 +1,55 @@
+/*Fichier avec le css general pour le livre d'Or*/
+
+/*Titre h1*/
+h1
+{
+	text-align: center; /*le texte est une milieu de la page*/
+	font-size: 50px; /*la taille du texte est de 50px*/
+}
+
+/*tout les paragraphes p*/
+p
+{
+	padding: 20px;/*marge interieur est de 20px*/
+	font-size: 20px;/*la taille du texte est de 20px*/
+}
+
+/*tout les paragraphes h2 de la page*/
+h2
+{
+	font-size: 30px;/*la taille du texte est de 30px*/
+}
+
+/*tout les td et label de la page*/
+td, label
+{
+	font-size: 20px;/*la taille du texte est de 20px*/
+}
+
+/*toute les legend de la page*/
+legend
+{
+	font-size: 30px;/*la taille du texte est de 30px*/
+	font-weight: bold;/*le texte est en gras*/
+}
+
+/*tout les fielset de la page*/
+fieldset
+{
+	padding: 20px;/*marge interieur est de 20px*/
+	margin: 10px;/*marge exterieur est de 10px*/
+}
+
+/*tout les textarea et input de la page*/
+textarea, input
+{
+	padding: 5px;/*marge interieur est de 5px*/
+}
+
+/*la divition avec comme id "recap"*/
+#recap
+{
+	border : 2px solid; /*bordure de 3px solide*/
+	padding: 7px;/*marge interieur est de 7px*/
+	margin: 7px;/*marge exterieur est de 7px*/
+}

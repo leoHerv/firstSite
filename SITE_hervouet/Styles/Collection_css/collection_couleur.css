@@ -1,0 +1,22 @@
+/*Fichier avec le css couleur pour les collection*/
+
+/*importation de collection_general.css dans ce fichier*/
+@import url("collection_general.css") screen;
+
+
+/*Titre h1 de la div id=information*/
+#information > h1
+{
+	color: #e1ffdf; /*texte en vert très clair*/
+}
+/*Le corps body*/
+body
+{
+	background-color: #83c74f; /*Arriere plan en vert*/
+}
+/*tout les "span" avec le href qui commence par color et qui on comme parent "p"*/
+p > span[href|="color"]
+{
+	color: #daffd3; /*texte en vert très clair*/
+}
+

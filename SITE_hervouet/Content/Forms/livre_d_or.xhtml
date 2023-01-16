@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" media="screen" title="livre d'or couleur" href="../../Styles/livre_d_or_css/livre_d_or_couleur.css"/>
+        <link rel="alternate stylesheet" type="text/css" media="screen" title="livre d'or noirbalnc" 
+        	  href="../../Styles/livre_d_or_css/livre_d_or_noirblanc.css"/>
+       	<script type="application/javascript" src="../../Javascript/livre_d_or.js"></script>
+       	<script type="application/javascript" src="../../Javascript/index.js"></script>
+        <title>Livre d'or</title>
+    </head>
+
+    <body>
+
+    	<a href="index.html">
+    	<img src="../../Images/Navigation/page_index.png" alt="page_index" title="Home" width="4%" height="4%"/></a>
+
+    	<form id="formulaire" method="post" action="http://voca2.univ-poitiers.fr/~subrenat/cours_web/traitement.php">
+    		<h1>Livre d'or</h1>
+
+    		<fieldset>
+
+		        <legend>Votre identité</legend>
+
+		        <p>
+		          <label for="lastname">Nom : </label>
+		          <input id="lastname" type="text" name="lastname" placeholder="Votre Nom" size="20" maxlength="40" onblur='verif_name("lastname")'/>
+		          <span id="error_lastname"></span>
+		        </p>
+
+		        <p>
+		          <label for="firstname">Prénom : </label>
+		          <input id="firstname" type="text" name="firstname" placeholder="Votre Prénom" size="20" maxlength="40" onblur='verif_name("firstname")'/>
+		          <span id="error_firstname"></span>
+		        </p>
+
+		         <p>
+		          <label for="born">Date de naissance : </label>
+		          <input id="datee" type="date" name="born" min="1900-01-01" max="2021-12-31" onblur='verif_date("datee")'/>
+		          <span id="error_date"></span>
+		        </p>
+
+    		</fieldset>
+
+    		<fieldset>
+
+    			<legend>Votre avis</legend>
+
+    			<p>
+		          <label for="bestpage">Quelle est la page que vous aimez le plus ? : </label>
+		          <table id="bestpage">
+		          	<tr>
+			          	 <td>L'Index</td>
+			          	 <td><input type="radio" name="bestpage" value="index" checked=""/></td>
+			      	</tr>
+			      	<tr>
+			          	 <td>Le Sitemap</td>
+			          	 <td><input type="radio" name="bestpage" value="sitemap"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>Le Synoptic</td>
+			          	 <td><input type="radio" name="bestpage" value="synoptic"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>Le Livre d'or</td>
+			          	 <td><input type="radio" name="bestpage" value="livre_d_or"/></td>
+			        </tr>
+			      	<tr>
+			        	 <td>La page Fortnite</td>
+			           	 <td><input type="radio" name="bestpage" value="fortnite"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>La page d'Animal crossing</td>
+			          	 <td><input type="radio" name="bestpage" value="animal_crossing"/></td>
+			        </tr>
+			      	<tr>
+			          	<td>La page de Pokémon Epée</td>
+			          	<td><input type="radio" name="bestpage" value="pokemon_epee"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>La page de Pokémon Bouclier</td>
+			           	 <td><input type="radio" name="bestpage" value="pokemon_bouclier"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>La page de Minecraft</td>
+			          	 <td><input type="radio" name="bestpage" value="minecraft"/></td>
+			        </tr>
+			      	<tr>
+			         	 <td>La page de Zelda</td>
+			          	 <td><input type="radio" name="bestpage" value="zelda"/></td>
+			        </tr>
+			      	<tr>
+			          	<td>La page de Mario kart</td>
+			          	<td><input type="radio" name="bestpage" value="mario_kart"/></td>
+			        </tr>
+			      	<tr>
+			          	<td>La page de Smash bros</td>
+			          	<td><input type="radio" name="bestpage" value="smash_bros"/></td>
+			        </tr>
+			      	<tr>
+			          	<td>La page de Mario odyssey</td>
+			          	<td><input type="radio" name="bestpage" value="mario_odyssey"/></td>
+			        </tr>
+			      	<tr>
+			          	<td>La page de Fifa</td>
+			          	<td><input type="radio" name="bestpage" value="fifa"/></td>
+			        </tr>
+		      	  </table>
+		        </p>
+
+		        <p>
+		          	<label for="whybestpage">Pourquoi cette page ? : </label>
+		          	<textarea id="whybestpage" name="whybestpage" rows="5" cols="100"> J'ai bien aimé cette page car ...</textarea>
+		        </p>
+		        <p id="worstpage">
+			        <label for="worstpage[]">Quelle(s) est(sont) la(les) pire(s) page(s) pour vous ? :</label><br/>
+		            
+		            <input type="checkbox" name="worstpage[]" value="index"/><label>L'Index</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="sitemap"/><label>Le Sitemap</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="synoptic"/><label>Le Synoptic</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="livre_d_or"/><label>Le Livre d'or</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="fortnite"/><label>La page Fortnite</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="animal_crossing"/><label>La page d'Animal crossing</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="pokemon_epee"/><label>La page de Pokémon Epée</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="pokemon_bouclier"/><label>La page de Pokémon Bouclier</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="minecraft"/><label>La page de Minecraft</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="zelda"/><label>La page de Zelda</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="mario_kart"/><label>La page de Mario kart</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="smash_bros"/><label>La page de Smash bros</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="mario_odyssey"/><label>La page de Mario odyssey</label><br/>
+		            <input type="checkbox" name="worstpage[]" value="fifa"/><label>La page de Fifa</label><br/>
+	            </p>
+	            <p>
+		          	<label for="whyworstpage">Pourquoi cette(ces) page(s) ? : </label>
+		          	<textarea id="whyworstpage" name="whyworstpage" rows="5" cols="100"> Je n'ai pas aimé cette(ces) page(s) car ...</textarea>
+		        </p>
+
+		         <p>
+		          	<label for="golbal">Un avis global sur le site ? : </label>
+		          	<textarea id="global" name="global" rows="5" cols="100">Le site est super bien !</textarea>
+		        </p>
+
+		        <p>
+		          <label for="note">Une note sur 10 pour le site : </label>
+		          <input id="note" type="number" name="note" min="1" max="10" placeholder="5" onblur='verif_nb("note")'/>
+		          <span id="error_note"></span>
+		        </p>
+
+
+    		</fieldset>
+
+    		<fieldset>
+		        <legend>Gestion du formulaire</legend>
+
+		        <div>
+		          <button type="reset"> Effacer</button>
+		          <button type="button" onclick="test_form()"> Tester</button>
+		          <button type="button" onclick="add_recap()"> Récapitulatif</button>
+		          <button id="submit" type="button" onclick="test_form()"> Envoyer</button>
+		        </div>
+
+     		 </fieldset>
+
+    	</form>
+
+    </body>
+</html>

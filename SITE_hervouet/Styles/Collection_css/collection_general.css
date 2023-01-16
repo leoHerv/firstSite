@@ -1,0 +1,41 @@
+/*Fichier avec le css general pour les collection*/
+
+/*Titre h1 qui est un enfant de id=information*/
+#information > h1
+{
+	text-align : center; /*texte au milieu*/
+	font-size: 40px; /*la taille de la police est de 40 pixel*/
+}
+/*La division id=creation et les division de class=sous_information*/
+.sous_information, #creation
+{
+	padding: 0px 0px 0px 25px ;  /*ajoute de la marge dans la division (haut,droit,bas,gauche)*/
+	margin : 30px 0px 30px 40px; /*ajoute de la marge autour de la division (haut,droit,bas,gauche)*/
+}
+/*Les paragraphes dans les division id=creation et les division de class=sous_information*/
+.sous_information p, #creation p
+{
+	font-size: 20px;	/*police est de 20px*/
+}
+/*Avant le titre h1 qui est enfant de id=information*/
+#information > h1::before
+{
+	content:"| "; /*ajoute "| " avant le h1*/
+}
+/*Après le titre h1 qui est enfant de id=information*/
+#information > h1::after
+{
+	content:" |"; /*ajoute "| " après le h1*/
+}
+/*Les "a" qui sont enfant de body*/
+body > a
+{
+	display: flex;		      /*met les elements de dans la boîte côte à côte horizontalement*/
+    justify-content: center;  /*met au centre la boîte*/
+}
+
+/*Le "a" visiter, qui est l'enfant de "p" et "p" l'enfant de "body"*/
+body > p > a:visited, body > p > a:link
+{
+  color:black; /*texte en noir*/
+}

@@ -1,0 +1,27 @@
+/*Fichier avec le css couleur pour le synoptic*/
+
+/*importation de synoptic_general.css dans ce fichier*/
+@import url("synoptic_general.css") screen;
+
+
+/*tout les td et th de la page*/
+td,th
+{
+	border-color: #005813; /*couleur de la bordure en vert*/
+}
+/*tout les th de la page*/
+th
+{
+	color: #e1ffde; /*texte en vert très clair*/
+	background-color: #1d8c35; /*arriere plan en vert*/
+}
+/*le body*/
+body
+{
+	background-color: #83c74e; /*Arriere plan en vert*/
+}
+/*tout les h1 de la page*/
+h1
+{
+	color: #e1ffde; /*texte en vert très clair*/
+}

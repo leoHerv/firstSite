@@ -1,0 +1,59 @@
+/*Fichier avec le css general pour le sitemap*/
+
+
+/*tout les h1 de la page*/
+h1
+{
+	text-align:center; /*le texte est au milieu*/
+	font-size: 60px; /*taille de police de 60px*/
+}
+/*tout les lid de la page*/
+li
+{
+	list-style: none; /*enleve les point devant le debut du li*/
+}
+/*l'id=big_ul*/
+#big_ul
+{
+	border: 3px dashed; /* une bordure de 3 pixel et en pointillé*/
+	padding: 10px; /*marge interieur de 10 pixel*/
+	margin :10px; /*marge exterieur de 10 pixel*/
+}
+/*avant les li avec href=marque-1 et qui ont comme parent ul*/
+ul > li[href="marque-1"]:before
+{
+	content:"/  "; /*on ajoute "/  " devant le li*/
+}
+/*avant les li avec href=marque-2 et qui ont comme parent ul*/
+ul > li[href="marque-2"]:before
+{
+	content:"//  "; /*on ajoute "//  " devant le li*/
+}
+/*avant les li avec href=marque-3 et qui ont comme parent ul*/
+ul > li[href="marque-3"]:before
+{
+	content:"///  "; /*on ajoute "///  " devant le li*/
+}
+/*les li avec href=marque-1 et qui ont comme parent ul*/
+ul > li[href="marque-1"]
+{
+	font-size: 30px; /*taille de la police de 30 pixel*/
+	margin: 30px; /*marge exterieur de 30 pixel*/
+}
+/*les li avec href=marque-2 et qui ont comme parent ul*/
+ul > li[href="marque-2"]
+{
+	font-size: 25px; /*taille de la police de 25 pixel*/
+	margin: 20px; /*marge exterieur de 20 pixel*/
+}
+/*les li avec href=marque-3 et qui ont comme parent ul*/
+ul > li[href="marque-3"]
+{
+	font-size: 20px; /*taille de la police de 20 pixel*/
+	margin: 5px; /*marge exterieur de 5 pixel*/
+}
+/*Les "a" visiter et link, qui sont les decendant de "body"*/
+body a:visited, body a:link
+{
+  color:#0a0a0a; /*texte en "noir"*/
+}

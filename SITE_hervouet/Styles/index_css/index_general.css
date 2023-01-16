@@ -1,0 +1,34 @@
+/*Fichier avec le css general pour l'index*/
+
+/*les h1 qui ont comme parent body*/
+body > h1
+{
+	text-align: center; /*texte au milieu*/
+	font-size: 40px; /*la taille de la police est de 40 pixel*/
+}
+/*tout les h2 qui sont dans body*/
+body h2
+{
+	font-size: 30px; /*la taille de la police est de 30 pixel*/
+	margin-left: 30px; /*marge exterieur de gauche de 30 pixel*/
+}
+/*les p qui ont comme balise qui precede h1 et les p qui ont comme balise qui precede p qui elle même ont h1 qui precede*/
+h1 + p, h1 + p + p
+{
+	text-align: center; /*texte au milieu*/
+}
+/*tout les p de la page*/
+p
+{
+	font-size: 20px; /*la taille de la police est de 20 pixel*/
+}
+/* les balises qui ont la class=margin */
+.margin
+{
+	margin-left:30px; /**/
+}
+/*les "a" visited et link qui sont des decendant de body*/
+body a:visited, body a:link
+{
+  color:#0a0a0a; /*texte en "noir"*/
+}

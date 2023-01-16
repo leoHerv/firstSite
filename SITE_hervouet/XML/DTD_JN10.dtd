@@ -1,0 +1,111 @@
+<!ENTITY % jour
+		 "(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
+		 16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)"> 
+
+<!ENTITY % mois "(01|02|03|04|05|06|07|08|09|10|11|12)">
+
+
+<!ELEMENT jeuxNintendo (Information?,Creation?,Navigation?,a*,p*,div*)>
+<!ATTLIST jeuxNintendo id ID #IMPLIED>
+
+<!------------------------------>
+<!--Elements de "jeuxNintendo"-->
+<!------------------------------>
+
+<!ELEMENT Information (game, div2?)>
+<!ATTLIST Information id ID #IMPLIED>
+
+<!ELEMENT Creation (Developer*,Editor*,Director*,Scriptwriter*,Composer*,Producer*)>
+<!ATTLIST Creation id ID #IMPLIED>
+
+<!ELEMENT a (picture,#PCDATA)
+<!ATTLIST a
+	  id ID #IMPLIED
+      href CDATA #IMPLIED>
+
+<!ELEMENT picture EMPTY>
+<!ATTLIST Creation
+      id ID #IMPLIED
+      src CDATA #REQUIRED
+	  alt CDATA #REQUIRED
+	  title CDATA #IMPLIED
+	  width CDATA #IMPLIED
+	  height CDATA #IMPLIED>
+
+<!ELEMENT span (#PCDATA)
+<!ATTLIST span
+       class IDREF #IMPLIED
+       id ID #IMPLIED>
+
+<!ELEMENT p (#PCDATA,a*)
+<!ATTLIST p
+       class IDREF #IMPLIED
+       id ID #IMPLIED>
+
+
+<!ELEMENT div (#PCDATA,a*)
+<!ATTLIST div
+       class IDREF #IMPLIED
+       id ID #IMPLIED>
+
+
+<!----------------------------->
+<!--Elements de "Information"-->
+<!----------------------------->
+
+<!ELEMENT game (#PCDATA)>
+<!ATTLIST game id ID #IMPLIED>
+
+<!ELEMENT div2 (gender+,releaseDate,gameMode?,evaluation?,sales?)
+<!ATTLIST div2 
+	  class IDREF #IMPLIED
+      id ID #IMPLIED>
+
+<!ELEMENT gender (#PCDATA, span*)>
+<!ATTLIST gender id ID #IMPLIED>
+
+<!ELEMENT releaseDate (day,month,year, span*,#PCDATA*)>
+<!ATTLIST releaseDate id ID #IMPLIED>
+
+<!ELEMENT gameMode (#PCDATA, span*)>
+<!ATTLIST gameMode id ID #IMPLIED>
+
+<!ELEMENT engine (#PCDATA, span*)>
+<!ATTLIST engine id ID #IMPLIED>
+
+<!ELEMENT evaluation (#PCDATA, span*)>
+<!ATTLIST evaluation id ID #IMPLIED>
+
+<!ELEMENT sales (#PCDATA, span*)>
+<!ATTLIST sales id ID #IMPLIED>
+
+<!ELEMENT day (%jour;)>
+<!ATTLIST day id ID #IMPLIED>
+
+<!ELEMENT month (%mois;)>
+<!ATTLIST month id ID #IMPLIED>
+
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year id ID #IMPLIED>
+
+<!-------------------------->
+<!--Elements de "Creation"-->
+<!-------------------------->
+
+<!ELEMENT Developer (#PCDATA, span*)>
+<!ATTLIST Developer id ID #IMPLIED>
+
+<!ELEMENT Editor (#PCDATA, span*)>
+<!ATTLIST Editor id ID #IMPLIED>
+
+<!ELEMENT Director (#PCDATA, span*)>
+<!ATTLIST Director id ID #IMPLIED>
+
+<!ELEMENT Scriptwriter (#PCDATA, span*)>
+<!ATTLIST Scriptwriter id ID #IMPLIED>
+
+<!ELEMENT Composer (#PCDATA, span*)>
+<!ATTLIST Composer id ID #IMPLIED>
+
+<!ELEMENT Producer (#PCDATA, span*)>
+<!ATTLIST Producer id ID #IMPLIED>
