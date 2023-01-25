@@ -14,6 +14,7 @@ I learned how to do the basics of a site and how to use HTML, CSS and Javascript
 For this project I use HTML, CSS and Javascript.  
 I was a project for my first year of computer science degree.  
 And it was made on Windows(comments in French).  
+Made at the start of 2021.
   
 ### Preview :  
 
